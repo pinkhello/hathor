@@ -34,7 +34,7 @@ linters:
     - depguard
     - dogsled
     - errcheck
-    - gochecknoinits
+#    - gochecknoinits
     - goconst
     - gocritic
     - gocyclo

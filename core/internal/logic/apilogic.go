@@ -24,7 +24,7 @@ func NewApiLogic(ctx context.Context, svcCtx *svc.ServiceContext) ApiLogic {
 }
 
 func (l *ApiLogic) Api(req types.Request) (*types.Response, error) {
-	// todo: add your logic here and delete this line
+	// add your logic here and delete this line
 
 	return &types.Response{}, nil
 }
