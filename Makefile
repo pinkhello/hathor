@@ -1,5 +1,5 @@
 VERSION=0.0.1
-COVER_FILE=.coverage
+COVER_FILE=coverage.txt
 
 .PHONY: setup
 setup:
