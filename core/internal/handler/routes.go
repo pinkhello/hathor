@@ -2,8 +2,9 @@
 package handler
 
 import (
-	"github.com/pinkhello/hathor/core/internal/svc"
 	"net/http"
+
+	"github.com/pinkhello/hathor/core/internal/svc"
 
 	"github.com/tal-tech/go-zero/rest"
 )

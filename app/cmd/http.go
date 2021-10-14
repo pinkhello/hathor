@@ -7,21 +7,20 @@ import (
 
 var (
 	httpCmd = &cobra.Command{
-		Use: "http",
+		Use:   "http",
 		Short: "start http",
-		Run: initHttp,
+		Run:   initHttp,
 	}
 )
 
-func initHttp(cmd *cobra.Command, args []string)  {
+func initHttp(cmd *cobra.Command, args []string) {
 	env, err := cmd.Flags().GetString("env")
-	if err != nil{
+	if err != nil {
 		panic(err)
 	}
 	core.Start(env)
 }
 
-func init()  {
+func init() {
 	rootCmd.AddCommand(httpCmd)
 }
-

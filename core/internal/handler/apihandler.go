@@ -1,10 +1,11 @@
 package handler
 
 import (
+	"net/http"
+
 	"github.com/pinkhello/hathor/core/internal/logic"
 	"github.com/pinkhello/hathor/core/internal/svc"
 	"github.com/pinkhello/hathor/core/internal/types"
-	"net/http"
 
 	"github.com/tal-tech/go-zero/rest/httpx"
 )

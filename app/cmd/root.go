@@ -2,16 +2,17 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
 	"os"
+
+	"github.com/spf13/cobra"
 )
 
 var (
 	Version = "1.0.0"
 	rootCmd = &cobra.Command{
-		Use: "hathor",
+		Use:     "hathor",
 		Version: Version,
-		Short: "hathor management cli",
+		Short:   "hathor management cli",
 	}
 	Env = "alpha"
 )
@@ -25,6 +26,6 @@ func Execute() {
 
 func init() {
 	flagSet := rootCmd.PersistentFlags()
-	flagSet.StringVarP(&Env,"env","e", os.Getenv("ENV"), "环境: dev, test, alpha, prod")
-	flagSet.StringVarP(&Version,"version", "v", os.Getenv("VERSION"), "版本: 1.0.0")
+	flagSet.StringVarP(&Env, "env", "e", os.Getenv("ENV"), "环境: dev, test, alpha, prod")
+	flagSet.StringVarP(&Version, "version", "v", os.Getenv("VERSION"), "版本: 1.0.0")
 }

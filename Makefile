@@ -8,6 +8,7 @@ setup:
 .PHONY: fmt
 fmt:
 	@gofmt -l -w -e .
+	@goimports -w .
 
 .PHONY: lint
 lint:
