@@ -2,9 +2,8 @@ package logic
 
 import (
 	"context"
-
-	"github.com/pinkhello/hathor/core/api/internal/svc"
-	"github.com/pinkhello/hathor/core/api/internal/types"
+	"github.com/pinkhello/hathor/core/internal/svc"
+	"github.com/pinkhello/hathor/core/internal/types"
 
 	"github.com/tal-tech/go-zero/core/logx"
 )

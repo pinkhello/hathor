@@ -1,0 +1,29 @@
+api: &api
+  Name: hathor
+  Host: 0.0.0.0
+  Port: 8888
+
+log: &log
+  Path: ./logs
+  AppName: hathor
+
+defaults: &defaults
+  api:
+    <<: *api
+  log:
+    <<: *log
+dev:
+  <<: *defaults
+  Env: dev
+
+test:
+  <<: *defaults
+  Env: test
+
+alpha:
+  <<: *defaults
+  Env: alpha
+
+prod:
+  <<: *defaults
+  Env: prod
